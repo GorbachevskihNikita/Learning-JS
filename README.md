@@ -1,1 +1,3 @@
 # Learning-JS
+
+Simple Calculator
