@@ -1,0 +1,21 @@
+.card h3{
+    color: white;
+    background-color: #8cb8e8;
+}
+.container{
+    margin-top: 20px;
+}
+.mdb-main-label{
+    z-index: 0 !important;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+#left-pd{
+    padding-left: 0;
+}
+.btn-secondary{
+    background-color: #8cb8e8 !important;
+    border-radius: 5px;
+}

@@ -2,22 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- My custom styles -->
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Input form</title>
 </head>
 <body>
     
-    <div class="container col-4">
+    <div class="container">
         <div class="card">
-            <h3 class="card-header text-center">Transfer to card</h3>
+            <h3 class="card-header text-center py-4">Transfer to card</h3>
+            <div class="card-body px-lg-5 pt-0">
+                <form class="text-center" action="#!" style="color: #757575">
+
+                    <div class="md-form">
+                        <input type="text" id="form1" class="form-control">
+                        <label for="form1">Description</label>
+                    </div>
+                    
+                    <select class="custom-select browser-default" id="options">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+
+                    <div class="md-form">
+                        <input type="text" id="form2" class="form-control">
+                        <label for="form2">To Card</label>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col col-lg-2" id="left-pd">
+                            <div class="md-form">
+                                <input type="text" id="form2" class="form-control">
+                                <label for="form2">Amount</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col col-lg-2">
+                            <div class="btn-group">
+                                <button class="btn btn-primary waves-effect waves-light"></button>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">#</button>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">RUR</a>
+                                    <a href="#" class="dropdown-item">EUR</a>
+                                    <a href="#" class="dropdown-item">USD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    
 
-    <!-- JavaScript Bootstrap4-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- My custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
