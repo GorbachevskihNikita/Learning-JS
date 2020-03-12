@@ -21,7 +21,7 @@
         <div class="card">
             <h3 class="card-header text-center py-4">Transfer to card</h3>
             <div class="card-body px-lg-5 pt-0">
-                <form class="text-center" action="#!" style="color: #757575">
+                <form class="text-center" action="#!" style="color: #757575" name="myform">
 
                     <div class="md-form">
                         <input type="text" id="form1" class="form-control">
@@ -29,14 +29,14 @@
                     </div>
                     
                     <select class="custom-select browser-default" id="options">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                        <option value="" disabled selected>Choose your account</option>
+                        <option value="1">Account 1</option>
+                        <option value="2">Account 2</option>
+                        <option value="3">Account 3</option>
                     </select>
 
                     <div class="md-form">
-                        <input type="text" id="form2" class="form-control">
+                        <input type="text" name="cardcode" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" id="form2" class="form-control" >
                         <label for="form2">To Card</label>
                     </div>
 
@@ -47,21 +47,18 @@
                                 <label for="form2">Amount</label>
                             </div>
                         </div>
-                        
-                        <div class="col col-lg-2">
-                            <div class="btn-group">
-                                <button class="btn btn-primary waves-effect waves-light"></button>
-                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">#</button>
-                                <div class="dropdown-menu">
-                                    <a href="#" class="dropdown-item">RUR</a>
-                                    <a href="#" class="dropdown-item">EUR</a>
-                                    <a href="#" class="dropdown-item">USD</a>
-                                </div>
-                            </div>
+
+                        <div class="form-group">
+                          <label for=""></label>
+                          <select class="form-control" name="" id="">
+                            <option>RUR</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                          </select>
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-secondary">Pay</button>
                     </div>
                 </form>
             </div>
