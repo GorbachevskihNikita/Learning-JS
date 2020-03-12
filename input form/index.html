@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- My custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Input form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <h3 class="card-header text-center py-4">Transfer to card</h3>
+            <div class="card-body px-lg-5 pt-0">
+                <form class="text-center" action="#!" style="color: #757575" name="myform">
+
+                    <div class="md-form">
+                        <input type="text" id="form1" class="form-control">
+                        <label for="form1">Description</label>
+                    </div>
+                    
+                    <select class="custom-select browser-default" id="options">
+                        <option value="" disabled selected>Choose your account</option>
+                        <option value="1">Account 1</option>
+                        <option value="2">Account 2</option>
+                        <option value="3">Account 3</option>
+                    </select>
+
+                    <div class="md-form">
+                        <input type="text" name="cardcode" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" id="form2" class="form-control" >
+                        <label for="form2">To Card</label>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col col-lg-2" id="left-pd">
+                            <div class="md-form">
+                                <input type="text" id="form2" class="form-control">
+                                <label for="form2">Amount</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for=""></label>
+                          <select class="form-control" name="" id="">
+                            <option>RUR</option>
+                            <option>EUR</option>
+                            <option>USD</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-secondary">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- My custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
