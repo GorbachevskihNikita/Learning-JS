@@ -1,23 +1,33 @@
 import React, { Component } from "react";
-import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import Card from 'react-bootstrap/Card';
+import Nav from 'react-bootstrap/Nav';
+import FirstTab from "./FirstTab";
+import SecondTab from "./SecondTab";
 
 
 class FeaturedContent extends Component {
     render() {
         return (
-            <div className="col 6">
-                <Container>
-                    <Row>
-                        <Col xs={6} md={4}>
-                            <Image src="holder.js/171x180" rounded />
-                            <span>image1</span>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <Card>
+                <BrowserRouter>
+                    <Card.Header>
+                        <Nav variant="tabs" defaultActiveKey={1}>
+                            <Nav.Item>
+                                <Nav.Link as={Link} to="/Preview" eventKey={1}>Preview</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link as={Link} to="/Info" eventKey={2}>Info</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    </Card.Header>
+                    <Card.Body>
+                        <Route exact path={`/`} component={FirstTab}/>
+                        <Route path={`/Preview`} component={FirstTab}/>
+                        <Route path={`/Info`} component={SecondTab}/>
+                    </Card.Body>
+                </BrowserRouter>
+            </Card>
         );
     }
 }
