@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
+import { MDBContainer } from "mdbreact";
 
 class SecondTab extends Component {
     render() {
         return (
             <div>
-                <Card.Title>title 2</Card.Title>
+                <Card.Title className="font-weight-normal">title 2</Card.Title>
                 <Card.Text>
-                    <p>Content for first tab</p>
+                    <MDBContainer>
+                        <p className="font-weight-light">Content for first tab</p>
+                    </MDBContainer>
                 </Card.Text>
             </div> 
         );

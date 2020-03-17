@@ -7,7 +7,7 @@ class FirstTab extends Component {
     render() {
         return (
             <div>
-                <Card.Title>title 1</Card.Title>
+                <Card.Title className="font-weight-normal">title 1</Card.Title>
                 <Card.Text>
                     <Image src={logo} fluid/>
                 </Card.Text>

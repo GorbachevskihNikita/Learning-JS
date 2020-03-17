@@ -14,17 +14,17 @@ class FeaturedContent extends Component {
                     <Card.Header>
                         <Nav variant="tabs" defaultActiveKey={1}>
                             <Nav.Item>
-                                <Nav.Link as={Link} to="/Preview" eventKey={1}>Preview</Nav.Link>
+                                <Nav.Link as={Link} to="/Preview" eventKey={1} className="font-weight-normal">Preview</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link as={Link} to="/Info" eventKey={2}>Info</Nav.Link>
+                                <Nav.Link as={Link} to="/Info" eventKey={2} className="font-weight-normal">Info</Nav.Link>
                             </Nav.Item>
                         </Nav>
                     </Card.Header>
                     <Card.Body>
-                        <Route exact path={`/`} component={FirstTab}/>
-                        <Route path={`/Preview`} component={FirstTab}/>
-                        <Route path={`/Info`} component={SecondTab}/>
+                        <Route exact path={`/`} component={FirstTab} />
+                        <Route path={`/Preview`} component={FirstTab} />
+                        <Route path={`/Info`} component={SecondTab} />
                     </Card.Body>
                 </BrowserRouter>
             </Card>

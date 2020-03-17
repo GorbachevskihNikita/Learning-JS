@@ -1,11 +1,16 @@
 #root{
     font-weight: 300 !important;
 }
+.link p{
+    margin-bottom: 0 !important;
+}
 .link:hover{
     background-color: #88b9ec;
+    cursor: pointer;
 }
-.link a:hover{
+.link p:hover{
     color: #001aff;
+    cursor: pointer;
 }
 .link{
     background-color: #cce5ff;
