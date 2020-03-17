@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+}
+
+.column {
+  border:1px #ccc solid;
+  border-radius: 3%;
+  flex-grow: 1;
+  margin: 25px;
+  text-align: center;
+}
+
+.card {
+  padding: 25px;
+  display: flex;
+}
+
+.card span {
+  flex-grow: 1;
+  text-align: center;
+}
